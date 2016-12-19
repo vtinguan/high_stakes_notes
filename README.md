@@ -16,4 +16,4 @@ https://github.com/vtinguan/high_stakes_notes/blob/master/test/unit/br/com/highs
 
 # TO-DO <br />
 -Ensure the security with SSL protocol (I don't have the CRT's) <br />
--Encrypt users passwords on database
+-Encrypt users passwords on database using [Amazon KMS](https://aws.amazon.com/pt/kms/)
