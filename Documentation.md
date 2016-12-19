@@ -268,13 +268,13 @@
   
   
   
-    **Login**
+    **Edit Note**
 ----
-  Authenticate an existent user and return JSON data with token and expiration information.
+  Edit note based on access token, new note and note id.
 
 * **URL**
 
-  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/editNote
 
 * **Method:**
 
@@ -284,15 +284,12 @@
 
    **Required:**
  
-   `username=[String], password=[String]`
+   `access_token=[String], editedNote=[String], id=[int]`
    
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{
-  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-  "expirationDate": "2016-12-20T03:48:38Z"
-}`
+    **Content:** `{"":""}`
  
 * **Error Response:**
 
@@ -301,6 +298,15 @@
   "timestamp": 1482125085382,
   "errorMessage": "Unauthorized",
   "status": "401"
+}`
+
+* **Error Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "timestamp": 1482122138881,
+  "errorMessage": "No content",
+  "status": "204"
 }`
 
 * **Sample Call:**
