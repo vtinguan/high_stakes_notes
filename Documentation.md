@@ -131,9 +131,6 @@
   <br />
   <br />
   
-  
-  
-  
       **Logout**
 ----
   Invalidate Access Token of an user.
