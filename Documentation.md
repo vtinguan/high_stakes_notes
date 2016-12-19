@@ -94,11 +94,11 @@
 
   **Login**
 ----
-  Authenticate an existent user and return JSON data with token and expiration information.
+  Retuns JSON with user password.
 
 * **URL**
 
-  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword
 
 * **Method:**
 
@@ -108,14 +108,13 @@
 
    **Required:**
  
-   `username=[String], password=[String]`
+   `username=[String]`
    
 * **Success Response:**
 
   * **Code:** 200 <br />
     **Content:** `{
-  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-  "expirationDate": "2016-12-20T03:48:38Z"
+  "password": "0612312"
 }`
  
 * **Error Response:**
@@ -129,10 +128,9 @@
 
 * **Sample Call:**
 
-  ``` curl -XPOST -H "Content-type: application/json" -d '{  
-   "username":"viniciustinguan",
-   "password":"02766"
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login' ```
+  ``` curl -XPOST -H "Content-type: application/json" -d '{
+  "username": "viniciustinguan",
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword' ```
   <br />
   <br />
   
