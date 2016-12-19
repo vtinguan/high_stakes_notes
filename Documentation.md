@@ -81,10 +81,10 @@
 
 * **Sample Call:**
 
-  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: 98a327d4-46ec-1a92-091c-60f40e9689f6" -d '{  
+  ``` curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: 98a327d4-46ec-1a92-091c-60f40e9689f6" -d '{  
    "username":"viniciustinguan",
    "password":"02766"
-}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login"```
+}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login" ```
   <br />
   <br />
   
@@ -123,11 +123,9 @@
 }`
 
 * **Sample Call:**
-
   ```curl -XPOST -H "Content-type: application/json" -d '{
   "username": "viniciustinguan",
 }' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword'```
-  
   <br />
   <br />
   
