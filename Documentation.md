@@ -311,22 +311,23 @@
 
 * **Sample Call:**
 
-  ``` curl -XPOST -H "Content-type: application/json" -d '{  
-   "username":"viniciustinguan",
-   "password":"02766"
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login' ```
+  ``` curl -XPOST -H "Content-type: application/json" -d '{
+  "access_token": "f01cbce2-cb49-4d94-ad17-481e21c648cd1482121885632",
+  "id": 1,
+  "editedNote" : "Testada monstra"
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/editNote' ```
   <br />
   <br />
   
   
   
-    **Login**
+    **Delete Note**
 ----
-  Authenticate an existent user and return JSON data with token and expiration information.
+  Delete note based on user's access_token and note id.
 
 * **URL**
 
-  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/deleteNote
 
 * **Method:**
 
@@ -336,15 +337,12 @@
 
    **Required:**
  
-   `username=[String], password=[String]`
+   `access_token=[String], id=[int]`
    
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{
-  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-  "expirationDate": "2016-12-20T03:48:38Z"
-}`
+    **Content:** `{"":""}`
  
 * **Error Response:**
 
@@ -355,11 +353,20 @@
   "status": "401"
 }`
 
+* **Error Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "timestamp": 1482122138881,
+  "errorMessage": "No content",
+  "status": "204"
+}`
+
 * **Sample Call:**
 
-  ``` curl -XPOST -H "Content-type: application/json" -d '{  
-   "username":"viniciustinguan",
-   "password":"02766"
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login' ```
+  ``` curl -XPOST -H "Content-type: application/json" -d '{
+  "access_token": "f01cbce2-cb49-4d94-ad17-481e21c648cd1482121885632",
+  "id": 1
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/deleteNote' ```
   <br />
   <br />
