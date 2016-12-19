@@ -1,3 +1,6 @@
+**API DOCUMENTATION**
+
+<br />
 **Sign Up**
 ----
   Create new user and return JSON data with token and expiration information.
