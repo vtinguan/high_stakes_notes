@@ -124,9 +124,9 @@
 
 * **Sample Call:**
 
-  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: ebb52467-939f-d6dd-5672-cbc168af600b" -d '{
+  ```curl -XPOST -H "Content-type: application/json" -d '{
   "username": "viniciustinguan",
-}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword"```
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword'```
   
   <br />
   <br />
