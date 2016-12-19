@@ -123,20 +123,19 @@
 }`
 
 * **Sample Call:**
-  ```curl -XPOST -H "Content-type: application/json" -d '{  
-   "username":"viniciustinguan2",
-   "password":"027663"
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp'```
+  ```curl -XPOST -H "Content-type: application/json" -d '{
+  "username": "viniciustinguan",
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword'```
   <br />
   <br />
   
-      **Logout**
+      **Forgot Password**
 ----
-  Invalidate Access Token of an user.
+  Retuns JSON with user password.
 
 * **URL**
 
-  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/logout
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword
 
 * **Method:**
 
@@ -146,13 +145,13 @@
 
    **Required:**
  
-   `access_token=[String]`
+   `username=[String]`
    
 * **Success Response:**
 
   * **Code:** 200 <br />
     **Content:** `{
-  "": ""
+  "password": "0612312"
 }`
  
 * **Error Response:**
@@ -165,9 +164,8 @@
 }`
 
 * **Sample Call:**
-
   ```curl -XPOST -H "Content-type: application/json" -d '{
-  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/logout'```
+  "username": "viniciustinguan",
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword'```
   <br />
   <br />
