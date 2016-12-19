@@ -123,9 +123,10 @@
 }`
 
 * **Sample Call:**
-  ```curl -XPOST -H "Content-type: application/json" -d '{
-  "username": "viniciustinguan",
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword'```
+  ```curl -XPOST -H "Content-type: application/json" -d '{  
+   "username":"viniciustinguan2",
+   "password":"027663"
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp'```
   <br />
   <br />
   
