@@ -38,7 +38,6 @@
   ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: f763137d-4ce8-660e-dee9-86cc0707d01e" -d '{  
    "username":"viniciustinguan2",
    "password":"027663"
-}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp"
-  ```
+}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp"```
   <br />
   <br />
