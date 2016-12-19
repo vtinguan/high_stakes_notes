@@ -179,13 +179,13 @@
   
   
   
-    **Login**
+    **Create Note**
 ----
-  Authenticate an existent user and return JSON data with token and expiration information.
+  Create a note based on user discovered by valid access_token and return it id.
 
 * **URL**
 
-  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/createNote
 
 * **Method:**
 
@@ -195,14 +195,13 @@
 
    **Required:**
  
-   `username=[String], password=[String]`
+   `access_token=[String], note=[String]`
    
 * **Success Response:**
 
   * **Code:** 200 <br />
     **Content:** `{
-  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-  "expirationDate": "2016-12-20T03:48:38Z"
+  "id": 3
 }`
  
 * **Error Response:**
@@ -216,10 +215,10 @@
 
 * **Sample Call:**
 
-  ``` curl -XPOST -H "Content-type: application/json" -d '{  
-   "username":"viniciustinguan",
-   "password":"02766"
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login' ```
+  ``` curl -XPOST -H "Content-type: application/json" -d '{
+  "access_token": "f01cbce2-cb49-4d94-ad17-481e21c648cd1482121885632",
+  "note": "Teste"
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/createNote' ```
   <br />
   <br />
   
