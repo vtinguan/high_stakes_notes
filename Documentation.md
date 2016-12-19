@@ -224,13 +224,13 @@
   
   
   
-    **Login**
+    **Retrieve Notes**
 ----
-  Authenticate an existent user and return JSON data with token and expiration information.
+  Based on access_token it return's all notes of an user.
 
 * **URL**
 
-  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/retrieveNotes
 
 * **Method:**
 
@@ -240,14 +240,13 @@
 
    **Required:**
  
-   `username=[String], password=[String]`
+   `access_token=[String]`
    
 * **Success Response:**
 
   * **Code:** 200 <br />
     **Content:** `{
-  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-  "expirationDate": "2016-12-20T03:48:38Z"
+  "access_token": "f01cbce2-cb49-4d94-ad17-481e21c648cd1482121885632",
 }`
  
 * **Error Response:**
@@ -261,10 +260,9 @@
 
 * **Sample Call:**
 
-  ``` curl -XPOST -H "Content-type: application/json" -d '{  
-   "username":"viniciustinguan",
-   "password":"02766"
-}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login' ```
+  ``` curl -XPOST -H "Content-type: application/json" -d '{
+  "access_token": "f01cbce2-cb49-4d94-ad17-481e21c648cd1482121885632",
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesNotes/retrieveNotes' ```
   <br />
   <br />
   
