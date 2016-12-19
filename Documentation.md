@@ -35,10 +35,10 @@
 
 * **Sample Call:**
 
-  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: f763137d-4ce8-660e-dee9-86cc0707d01e" -d '{  
+  ```curl -XPOST -H "Content-type: application/json" -d '{  
    "username":"viniciustinguan2",
    "password":"027663"
-}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp"```
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp'```
   <br />
   <br />
   
@@ -81,10 +81,10 @@
 
 * **Sample Call:**
 
-  ``` curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: 98a327d4-46ec-1a92-091c-60f40e9689f6" -d '{  
+  ``` curl -XPOST -H "Content-type: application/json" -d '{  
    "username":"viniciustinguan",
    "password":"02766"
-}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login" ```
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login' ```
   <br />
   <br />
   
@@ -165,8 +165,8 @@
 
 * **Sample Call:**
 
-  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: ff7c9f2c-5164-5d14-2509-91a94e673691" -d '{
+  ```curl -XPOST -H "Content-type: application/json" -d '{
   "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
-}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/logout"```
+}' 'http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/logout'```
   <br />
   <br />
