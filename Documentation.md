@@ -46,7 +46,7 @@
   
   **Login**
 ----
-  Authenticating an existent user and return JSON data with token and expiration information.
+  Authenticate an existent user and return JSON data with token and expiration information.
 
 * **URL**
 
@@ -127,5 +127,50 @@
   ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: ebb52467-939f-d6dd-5672-cbc168af600b" -d '{
   "username": "viniciustinguan",
 }' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword"```
+  <br />
+  <br />
+  
+  
+  
+  
+      **Logout**
+----
+  Invalidate Access Token of an user.
+
+* **URL**
+
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/logout
+
+* **Method:**
+
+  `POST`
+  
+*  **JSON Params**
+
+   **Required:**
+ 
+   `access_token=[String]`
+   
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "": ""
+}`
+ 
+* **Error Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "timestamp": 1482125085382,
+  "errorMessage": "Unauthorized",
+  "status": "401"
+}`
+
+* **Sample Call:**
+
+  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: ff7c9f2c-5164-5d14-2509-91a94e673691" -d '{
+  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
+}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/logout"```
   <br />
   <br />
