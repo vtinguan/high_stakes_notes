@@ -41,3 +41,49 @@
 }' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/signUp"```
   <br />
   <br />
+  
+  
+  
+  **Login**
+----
+  Authenticating an existent user and return JSON data with token and expiration information.
+
+* **URL**
+
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login
+
+* **Method:**
+
+  `POST`
+  
+*  **JSON Params**
+
+   **Required:**
+ 
+   `username=[String], password=[String]`
+   
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "access_token": "b3e0e168-9245-4910-aafc-86cf3ee330131482119318105",
+  "expirationDate": "2016-12-20T03:48:38Z"
+}`
+ 
+* **Error Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "timestamp": 1482125085382,
+  "errorMessage": "Unauthorized",
+  "status": "401"
+}`
+
+* **Sample Call:**
+
+  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: 98a327d4-46ec-1a92-091c-60f40e9689f6" -d '{  
+   "username":"viniciustinguan",
+   "password":"02766"
+}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login"```
+  <br />
+  <br />
