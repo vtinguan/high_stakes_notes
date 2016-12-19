@@ -87,3 +87,45 @@
 }' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/login"```
   <br />
   <br />
+  
+    **Forgot Password**
+----
+  Retuns JSON with user password.
+
+* **URL**
+
+  http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword
+
+* **Method:**
+
+  `POST`
+  
+*  **JSON Params**
+
+   **Required:**
+ 
+   `username=[String]`
+   
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "password": "0612312"
+}`
+ 
+* **Error Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{
+  "timestamp": 1482125085382,
+  "errorMessage": "Unauthorized",
+  "status": "401"
+}`
+
+* **Sample Call:**
+
+  ```curl -X POST -H "Cache-Control: no-cache" -H "Postman-Token: ebb52467-939f-d6dd-5672-cbc168af600b" -d '{
+  "username": "viniciustinguan",
+}' "http://highstakesnotes-env.us-east-1.elasticbeanstalk.com/HighStakesUsers/forgotPassword"```
+  <br />
+  <br />
