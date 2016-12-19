@@ -5,3 +5,6 @@
 <br />
 
 # [API DOC](https://github.com/vtinguan/high_stakes_notes/blob/master/Documentation.md) <br />
+
+THIS APPLICATION IS HOSTED AMAZON AWS AND THE ENDPOINT IS: highstakesnotes-env.us-east-1.elasticbeanstalk.com  <br />
+(ELASTICBEANSTALK + RDS MYSQL) 
