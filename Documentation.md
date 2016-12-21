@@ -249,7 +249,7 @@
 
   * **Code:** 200 <br />
     **Content:** `{
-  "access_token": "f01cbce2-cb49-4d94-ad17-481e21c648cd1482121885632",
+  "note": "Testqq"
 }`
  
 * **Error Response:**
